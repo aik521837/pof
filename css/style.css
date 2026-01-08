@@ -1,0 +1,851 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: alice;
+    src: url(../font/Alice-Regular.ttf);
+}
+
+@font-face {
+    font-family: NotoSansKR;
+    src: url(../font/SourceSerif4-VariableFont_opsz\,wght.ttf)
+}
+
+@font-face {
+    font-family: NotoSansKRre;
+    src: url(../font/SourceSerif4_36pt-Regular.ttf);
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+html {
+    background-color: #1D2027;
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+}
+
+button{
+    color: #000;
+}
+
+/* ---------------walk------------ */
+.walk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.foot {
+    position: absolute;
+    /* width: 5rem; */
+
+}
+
+
+.point1 {
+    bottom: -10rem;
+    right: 38%;
+    transform: rotate(2deg);
+}
+
+.point2 {
+    bottom: -22rem;
+    right: 29%;
+    transform: rotate(17deg);
+}
+
+.point3 {
+    bottom: -39rem;
+    right: 23%;
+    transform: rotate(30deg);
+}
+
+.point4 {
+    bottom: -57rem;
+    right: 20%;
+    transform: rotate(60deg);
+}
+
+.point5 {
+    bottom: -70rem;
+    right: 23%;
+    transform: rotate(70deg);
+}
+
+.point6 {
+    bottom: -85rem;
+    right: 29%;
+    transform: rotate(80deg);
+}
+
+
+
+.point7 {
+    bottom: -230rem;
+    right: 23%;
+    transform: rotate(30deg);
+}
+
+.point8 {
+    bottom: -245rem;
+    right: 18%;
+    transform: rotate(35deg);
+}
+
+.point9 {
+    bottom: -320rem;
+    right: 15%;
+    transform: rotate(80deg);
+}
+
+.point10 {
+    bottom: -330rem;
+    right: 20%;
+    transform: rotate(100deg);
+}
+
+.point11 {
+    bottom: -340rem;
+    right: 28%;
+    transform: rotate(120deg);
+}
+
+.point12 {
+    bottom: -343rem;
+    right: 36%;
+    transform: rotate(120deg);
+}
+
+.deco {
+    bottom: -610rem;
+    right: 0%;
+    /* transform: rotate(120deg); */
+}
+
+
+
+
+/* .point4 { 
+    bottom: -200rem; right: 23%;  transform: rotate(30deg);
+ }
+
+
+ .point5 { 
+    bottom: -260rem; right: 18%;  transform: rotate(60deg);
+ }
+.point6 { 
+    bottom: -275rem; right: 24%;  transform: rotate(90deg);
+ }
+.point7 { 
+    bottom: -290rem; right: 32%;  transform: rotate(100deg);
+ }
+.point8 { 
+    bottom: -530rem; right: 27%;  transform: rotate(10deg);
+ }
+
+ .deco {
+    bottom: -560rem; right: 0%; 
+
+ } */
+
+.point1,
+.point2,
+.point3,
+.point4,
+.point5,
+.point6,
+.point7,
+.point8,
+.point9,
+.point10,
+.point11,
+.point12,
+.deco
+{
+
+opacity: 0;
+
+transition: all 0.4s ease;
+pointer-events: none;
+}
+
+
+.point1.active,
+.point2.active,
+.point3.active,
+.point4.active,
+.point5.active,
+.point6.active,
+.point7.active,
+.point8.active,
+.point9.active,
+.point10.active,
+.point11.active,
+.point12.active,
+.deco.active {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------header------------ */
+header {
+    /* text-align: center; */
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 70rem;
+
+
+
+
+
+}
+
+header .port p {
+    font-size: 20rem;
+    color: #777;
+    font-family: alice;
+    /* position: relative; */
+    left: 50rem;
+    text-align: center;
+    transform: translateX(-20rem);
+
+}
+
+header .folio {
+    position: relative;
+    text-align: center;
+    transform: translateY(-5rem);
+
+
+}
+
+
+header .folio p {
+    font-size: 20rem;
+    color: #777;
+    font-family: alice;
+    position: relative;
+    transform: translateX(10rem);
+
+    display: inline-block
+}
+
+header .folio p::after {
+    content: "";
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    z-index: -1;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+header .folio img {
+    position: absolute;
+    top: 30%;
+    left: -21%;
+    animation: spotligh 4s infinite;
+
+}
+
+@keyframes spotligh {
+
+    0%,
+    10% {
+        opacity: 0;
+    }
+
+
+    12% {
+        opacity: 0.5;
+    }
+
+    14% {
+        opacity: 0.1;
+    }
+
+    16% {
+        opacity: 0.8;
+    }
+
+    18% {
+        opacity: 0.3;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+
+    80% {
+        opacity: 1;
+    }
+
+    82% {
+        opacity: 0.2;
+    }
+
+    84% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+header img {
+    position: absolute;
+    transform: translate(-20rem 10rem);
+}
+
+
+
+
+/* ----------main----------- */
+
+
+.title {
+    font-size: 6.4rem;
+    font-family: NotoSansKR;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 10rem;
+    position: relative;
+    /* right: -50px; */
+
+}
+
+
+/* main {
+    display: flex;
+    flex-direction: column;
+    
+} */
+
+main .section.zero .profile {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/profile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    /* background-size: contain; */
+}
+
+
+main .section.zero .profile .profile_info {
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-60%, -30%);
+    font-size: 1.6rem;
+    font-family: NotoSansKR;
+    text-align: center;
+}
+
+main .section.zero .profile .profile_info >img{
+    width: 15rem;
+    height: 19rem;
+}
+
+main .section.zero .profile .profile_info_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+
+}
+
+main .section.zero .profile .profile_info .name {
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+main .section.zero .profile .profile_info .tag {
+    display: flex;
+    gap: 1rem;
+}
+
+main .section.zero .profile .profile_info .skill {
+
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+main .section.zero .profile .profile_info .skill img {
+    width: 5rem;
+    height: 4.3rem;
+    object-fit: contain;
+}
+
+.skill img:nth-child(1),
+.skill img:nth-child(2),
+.skill img:nth-child(3) {
+    margin: 0 0.3rem;
+
+}
+
+main .section.zero .Certificate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+main .section.zero .Certificate button{
+   
+    border-radius: 5rem;
+    padding: 1rem 3rem;
+    margin-top: 4rem;
+
+}
+
+main .section.zero .Certificate p:nth-child(1){
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+main .section.zero {
+    position: relative;
+    height: 100vh;
+    margin-top: 20rem;
+
+
+}
+
+
+
+
+
+
+/* ---------------------------- */
+
+.line {
+    width: 100%;
+    height: 47rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+
+}
+
+.line p {
+    font-size: 3.6rem;
+    font-weight: 900;
+    background-color: #FDCF37;
+    white-space: nowrap;
+    animation: floating 20s linear infinite;
+    padding: 2rem 0;
+
+
+
+
+
+}
+
+.line .line_1 {
+    height: fit-content;
+    position: absolute;
+    top: 45rem;
+    transform: rotate(8.7deg);
+}
+
+.line .line_2 {
+    height: fit-content;
+    position: absolute;
+    bottom: 40rem;
+    transform: rotate(-6.4deg);
+
+
+    /* transform: rotate(8.7deg); */
+
+    /* overflow: hidden; */
+
+}
+
+
+
+/* .line .line_2 {
+    position: absolute;
+    transform: rotate(8.7deg);
+} */
+
+
+@keyframes floating {
+    0% {
+        transform: translate(-50%, -50%)
+    }
+
+    100% {
+        transform: translate(0, -50%)
+    }
+}
+
+
+
+/* ------------------------- */
+main .section.one {
+    margin: 10rem 0 40rem 0;
+
+}
+
+
+.red {
+    width: 100px;
+    height: 2rem;
+}
+
+
+main .section.one .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    width: 100%;
+
+}
+
+main .section.one .banner .up_down {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    
+
+}
+
+main .section.one .banner .up_down img{
+transition: all 0.4s;
+cursor: pointer;
+}
+main .section.one .banner .up_down img:hover{
+    transform: scale(1.3);
+}
+
+main .section.one .up {
+    width: 100px;
+    display: flex;
+    gap: 10rem;
+    
+
+}
+
+
+main .section.one .down {
+    width: 100px;
+    display: flex;
+    gap: 10rem;
+    
+}
+
+
+
+
+main .section.one .up img:nth-child(1) {
+    /* width: 40rem; */
+    height: 35rem;
+}
+
+main .section.one .up img:nth-child(2) {
+
+    width: 43rem;
+    height: 37rem;
+}
+
+main .section.one .down img:nth-child(1) {
+
+    /* width: 43rem; */
+    height: 22rem;
+}
+
+main .section.one .down img:nth-child(2) {
+
+    width: 40rem;
+    height: 35rem;
+}
+
+
+
+
+/* main .section.one {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10rem;
+    padding: 0 26rem;
+} */
+
+/* main .section.one .banner {
+    display: flex;
+    gap: 10rem;
+
+
+} */
+
+/* main .section.one .banner .up_down {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+} */
+
+/* main .section.one .up {
+    display: flex;
+    position: relative;
+    left: 30%;
+
+} */
+
+/* main .section.one .down {
+    display: flex;
+    position: relative;
+    left: 50%;
+    gap: 5rem;
+
+} */
+
+/* main .section.own .banner .title {
+    position: relative;
+    right: 50rem;
+    
+
+
+} */
+
+
+
+
+
+/* ------------------------- */
+
+main .section.two {
+    margin-bottom: 40rem;
+    overflow: hidden;
+}
+
+main .section.two .title {
+    text-align: center;
+
+}
+
+main .section.two .title.clone {
+    /* padding-top: 20rem; */
+}
+
+main .section.two .card {
+    display: flex;
+
+    row-gap: 15rem;
+    gap: 20rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 13rem;
+    /* padding: 0 10rem; */
+    cursor: pointer;
+
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    font-family: NotoSansKRre;
+    text-align: right;
+    gap: 3rem;
+
+
+}
+
+main .info h1 {
+    font-size: 3.6rem;
+    color: #fff;
+
+
+}
+
+main .info p {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+    color: #000;
+}
+
+button:hover {
+    background-color: #727272;
+    color: #fff;
+}
+
+button {
+    font-size: 2.4rem;
+    font-family: NotoSansKR;
+    padding: 1.4rem 2.8rem;
+    border-radius: 5rem;
+    border: none;
+
+}
+
+
+/* -------------------------- */
+main .section.three {
+    margin-bottom: 20rem;
+
+}
+
+main .section.three .title {
+    text-align: center;
+
+
+}
+
+main .section.three .news {
+
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-bottom: 13rem;
+    /* padding: 0 26rem; */
+
+}
+
+
+main .section.three .news .card img {
+    width: 41rem;
+    height: 41rem;
+    cursor: pointer;
+    
+}
+
+
+main .section.three .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3rem;
+
+}
+
+/* ------------------------------ */
+main .section.four {
+
+    margin-bottom: 50rem;
+
+    /* height: 105rem;
+    background-image: url(../images/news.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 0 26rem;
+    margin: 10rem 0; */
+
+
+}
+
+main .section.four .title {
+    text-align: center;
+}
+
+/* main .section.four .title {
+    padding-top: 0;
+    color: #000;
+    text-align: center;
+    line-height: 19rem;
+
+} */
+
+main .section.four .detail_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    /* position: absolute; */
+    padding: 0 10rem;
+   
+
+}
+
+main .section.four .detail_page .Page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 5rem;
+    max-width: 44rem
+    
+
+}
+
+main .section.four .detail_page .Page img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+
+}
+
+/* main .section.four .detail_page .Page button {
+    color: #000;
+    background-color: #727272;
+}
+
+main .section.four .detail_page .Page button:hover {
+    color: #fff;
+    background-color: #2a2a2a;
+} */
+
+/* main .section.four .detail_page span {
+    position: absolute;
+    width: 0px;
+    height: 840px;
+    border-left: 2px dashed black;
+    margin: 0 1rem;
+
+} */
