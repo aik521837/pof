@@ -776,7 +776,7 @@ main .section.three .card {
 /* ------------------------------ */
 main .section.four {
 
-    margin-bottom: 50rem;
+    margin-bottom: 10rem;
 
     /* height: 105rem;
     background-image: url(../images/news.png);
@@ -849,3 +849,6 @@ main .section.four .detail_page .Page button:hover {
     margin: 0 1rem;
 
 } */
+
+
+
