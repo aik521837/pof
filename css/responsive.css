@@ -3,9 +3,9 @@
         display: none;
     }
 
-    main .section.two{
-    overflow: hidden;
-}
+    main .section.two {
+        overflow: hidden;
+    }
 
 }
 
@@ -25,13 +25,14 @@
         text-align: center;
     }
 
-   
+
 
     main .section.one .up,
     main .section.one .down {
-        width: 100%;      
-        gap: 10rem;display: flex;
-        width: 100%;    
+        width: 100%;
+        gap: 10rem;
+        display: flex;
+        width: 100%;
         gap: 10rem;
         align-items: center;
         justify-content: center;
@@ -45,8 +46,8 @@
 
 
 
-    
-     main .section.two .card {
+
+    main .section.two .card {
         flex-direction: column !important;
         padding: 0 20rem;
         margin-bottom: 8rem;
@@ -83,7 +84,7 @@
 
 
 
- main .section.three .news .card img {
+    main .section.three .news .card img {
         width: 100%;
         height: auto;
         /* margin-bottom: 2rem; */
@@ -91,48 +92,51 @@
     }
 
 
- main .section.three .news {
-       
+    main .section.three .news {
+
         padding: 0 10rem;
-        
- }
+
+    }
 
 
 
 
- main .section.four .Page img {
-        
+    main .section.four .Page img {
+
         height: auto;
         /* margin-bottom: 2rem; */
 
     }
 
 
- main .section.four .detail_page {
-       
-        padding: 0 10rem;}
-      
+    main .section.four .detail_page {
+
+        padding: 0 10rem;
+    }
+
 
 }
+
 /* --------------------------------------------------- */
-@media screen and (max-width: 1000px){
-     /* html {
+@media screen and (max-width: 1000px) {
+    /* html {
         font-size: 8px;
     } */
 
-    main .section.zero .profile .profile_info{
+    main .section.zero .profile .profile_info {
         top: 25%;
     }
 
 
     header .folio img {
         width: 100%;
-    position: absolute;
-    
-    left: -5%;
-    
+        position: absolute;
 
-}
+        left: -5%;
+
+
+    }
+
     /* header .folio p img {
         display: none;}
          */
@@ -146,18 +150,19 @@ main .section.one .down img:nth-child(2) {
 }
 
 
- main .section.four .Page img {
-        width: 100%;
-        height: auto;
-        /* margin-bottom: 2rem; */
+main .section.four .Page img {
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 2rem; */
 
-    }
+}
 
 
- main .section.four .detail_page {
-       
-        padding: 0 10rem;}
-      
+main .section.four .detail_page {
+
+    padding: 0 10rem;
+}
+
 
 
 
@@ -195,12 +200,12 @@ main .section.one .down img:nth-child(2) {
     }
 
     header .folio p::after {
-       display: none;
+        display: none;
     }
 
     /* 스포트라이트 이미지 */
     header .folio img {
-       display: none;
+        display: none;
     }
 
 
@@ -253,11 +258,15 @@ main .section.one .down img:nth-child(2) {
 
     }
 
-    .line p {
+    .line .line_1 p {
         font-size: 2rem;
         padding: 1.5rem;
     }
 
+    .line .line_2 p {
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
 
 
     /* -------배너-------- */
@@ -340,7 +349,7 @@ main .section.one .down img:nth-child(2) {
     main .section.three .news,
     main .section.four .detail_page {
         flex-direction: column;
-        
+
     }
 
 
@@ -353,6 +362,6 @@ main .section.one .down img:nth-child(2) {
     .title {
         font-size: 4rem;
         padding-bottom: 5rem;
-         /* padding: 0 8rem; */
+        /* padding: 0 8rem; */
     }
 }

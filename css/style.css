@@ -471,19 +471,27 @@ main .section.zero {
 
 }
 
-.line p {
+.line .line_1 p {
     font-size: 3.6rem;
     font-weight: 900;
     background-color: #FDCF37;
     white-space: nowrap;
     animation: floating 20s linear infinite;
     padding: 2rem 0;
-
-
-
-
-
 }
+
+.line .line_2 p {
+    font-size: 3.6rem;
+    font-weight: 900;
+    background-color: #FDCF37;
+    white-space: nowrap;
+    animation: floating2 20s linear infinite;
+    padding: 2rem 0;
+}
+
+
+
+
 
 .line .line_1 {
     height: fit-content;
@@ -520,6 +528,17 @@ main .section.zero {
 
     100% {
         transform: translate(0, -50%)
+    }
+}
+
+@keyframes floating2 {
+    0% {
+         transform: translate(0, -50%)
+        
+    }
+
+    100% {
+       transform: translate(-50%, -50%)
     }
 }
 
